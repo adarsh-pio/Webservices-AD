@@ -1,7 +1,7 @@
        ctl-opt option(*srcstmt) dftactgrp(*no) actgrp('HTTPREQ');
 
        dcl-s rspmsg          char(9999) inz;
-       dcl-s rsphdr          char(2048) inz;
+       dcl-s rsphdr          char(9999) inz;
        dcl-ds users_ds;
               filler1       char(5)  inz('"id":');
               idval         char(10) inz;
