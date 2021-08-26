@@ -140,7 +140,7 @@
        //-----------HTTP DELETE---------
        req = 'DELETE';
 
-       exec sql select cast(RESPONSEMSG as character(9999)),
+       exec sql select cast(ifnull(RESPONSEMSG,'') as character(9999)),
                        cast(RESPONSEHTTPHEADER as character(9999))
                 into   :rspmsg, :rsphdr
                 from table(SYSTOOLS.HTTPDELETECLOBVERBOSE( trim(:wkUrl),
