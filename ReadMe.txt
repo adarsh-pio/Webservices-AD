@@ -5,3 +5,6 @@ For Creating IBM i as WebService Client, so as to process HTTP requests, listed 
   (a) PRCHTTP: to get data from environment variables
   (b) CONVCCSID: convert the UTF encoding of basic Auth raw data into EBCDIC and extract Userid and password
   (c) VALUSPWD; Validate the userId and Password for the user in IBM i.
+The binding directory ADARSH/WEBSRVBND has 2 service programs:
+  (i) QSYS/QTQICONV : for ccsid conversion of data utility
+  (ii)QHTTPSVR/QZHBCGI: for CGI utilities for HTTP in IBM i
